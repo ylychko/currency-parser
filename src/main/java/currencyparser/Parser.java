@@ -15,6 +15,8 @@ public class Parser {
     public Parser(ParserStrategy strategy) {
         this.parserStrategy = strategy;
         System.out.println("Parser: instance created");
+        System.out.println("Parser: everything is OK");
+        System.out.println("AAA");
     }
 
 
