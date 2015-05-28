@@ -15,7 +15,6 @@ public class Parser {
     public Parser(ParserStrategy strategy) {
         this.parserStrategy = strategy;
         System.out.println("Parser: instance created");
-        System.out.println("Parser: everything is OK");
     }
 
 
@@ -23,7 +22,6 @@ public class Parser {
         List<Currency> list = parserStrategy.parse();
         for(Currency c : list){
             currencyDAO.add(c);
-            System.out.println("Parser: add");
         }
     }
 
