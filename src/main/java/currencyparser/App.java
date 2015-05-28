@@ -17,8 +17,16 @@ public class App {
         SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
         HibernateUtils.setSessionFactory(sessionFactory);
 */
+
+
+
         Parser p = (Parser) ctx.getBean("parser");
-        System.out.println(p);
-        p.run();
+        if(p == null){
+            System.out.println("p is null");
+        }else{
+            System.out.println(p);
+            p.run();
+        }
+
     }
 }
