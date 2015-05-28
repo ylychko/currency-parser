@@ -23,6 +23,7 @@ public class Parser {
         List<Currency> list = parserStrategy.parse();
         for(Currency c : list){
             currencyDAO.add(c);
+            System.out.println("Parser: add");
         }
     }
 
