@@ -40,6 +40,7 @@ public class UrlParserStrategy implements ParserStrategy {
         }
         Elements elements = doc.select(".content > table:nth-child(6) > tbody:nth-child(1) > tr");
         List<Currency> list = new ArrayList<Currency>();
+
         for (int i = 1; i < elements.size(); i++) {
             Element e = elements.get(i);
 
@@ -48,10 +49,12 @@ public class UrlParserStrategy implements ParserStrategy {
             c.setLcode(e.children().get(1).text().trim());
             c.setName(e.children().get(3).text().trim());
             Rate rate = new Rate();
+
             rate.setUnits(Integer.parseInt(e.children().get(2).text()));
             rate.setRate(Double.parseDouble(e.children().get(4).text()));
             rate.setDate(new Date(System.currentTimeMillis()));
             rate.setCurrency(c);
+            // create rates
             Set<Rate> set = new HashSet<>();
             set.add(rate);
             c.setRates(set);
