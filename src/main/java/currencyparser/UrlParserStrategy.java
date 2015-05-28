@@ -57,7 +57,7 @@ public class UrlParserStrategy implements ParserStrategy {
             c.setRates(set);
             System.out.println(c);
             list.add(c);
-
+            System.out.println("parse: list.add");
         }
         return list;
     }
