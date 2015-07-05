@@ -29,5 +29,9 @@ public class App {
             p.run();
         }
         System.out.println("Sobaka");
+        boolean devMode = false;
+        if(devMode){
+            System.out.println("I'm in DevMode!");
+        }
     }
 }
