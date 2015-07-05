@@ -23,9 +23,8 @@ public class App {
         Parser p = (Parser) ctx.getBean("parser");
         if(p == null){
             System.out.println("p is null");
-            System.out.println("kot");
         }else{
-            System.out.println(p);
+            System.out.println("Something");
             p.run();
         }
 
