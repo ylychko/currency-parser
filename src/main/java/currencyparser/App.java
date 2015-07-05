@@ -31,7 +31,9 @@ public class App {
         System.out.println("Sobaka");
         boolean devMode = false;
         if(devMode){
-            
+            if(Boolean.FALSE){
+                System.out.println("Have no idea");
+            }
             System.out.println("I'm in DevMode!");
         }
     }
