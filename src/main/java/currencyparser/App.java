@@ -32,7 +32,6 @@ public class App {
         boolean devMode = false;
         if(devMode){
             System.out.println("I'm in DevMode!");
-            System.out.println("I'm in DevMode 2!");
         }
     }
 }
