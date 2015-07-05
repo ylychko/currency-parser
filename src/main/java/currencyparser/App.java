@@ -25,6 +25,8 @@ public class App {
             System.out.println("p is null");
             System.out.println("kot");
         }else{
+
+            System.out.println("reverted and committted");
             System.out.println(p);
             p.run();
         }
@@ -32,6 +34,7 @@ public class App {
         boolean devMode = false;
         if(devMode){
             System.out.println("I'm in DevMode!");
+            System.out.println("I'm in DevMode 2!");
         }
     }
 }
