@@ -30,6 +30,8 @@ public class App {
             System.out.println(p);
             p.run();
         }
+
+        System.out.println("local change in development");
         System.out.println("Sobaka");
         boolean devMode = false;
         if(devMode){
