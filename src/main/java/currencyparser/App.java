@@ -27,6 +27,9 @@ public class App {
             System.out.println("Something");
             p.run();
         }
-
+        System.out.println("Changes!");
+        System.out.println("Changes4!");
+        System.out.println("Changes3!");
+        System.out.println("Changes2!");
     }
 }
