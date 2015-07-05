@@ -18,18 +18,13 @@ public class App {
         HibernateUtils.setSessionFactory(sessionFactory);
 */
 
-
-
         Parser p = (Parser) ctx.getBean("parser");
         if(p == null){
             System.out.println("p is null");
-            System.out.println("kot");
         }else{
-
-            System.out.println("reverted and committted");
-            System.out.println(p);
             p.run();
         }
+<<<<<<< HEAD
 
         System.out.println("local change in development");
         System.out.println("Sobaka");
@@ -38,5 +33,7 @@ public class App {
             System.out.println("I'm in DevMode!");
             System.out.println("I'm in DevMode 2!");
         }
+=======
+>>>>>>> 6c44044f2f0d774e9a1ea099cb70391ac4a24287
     }
 }
