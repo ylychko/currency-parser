@@ -24,16 +24,5 @@ public class App {
         }else{
             p.run();
         }
-<<<<<<< HEAD
-
-        System.out.println("local change in development");
-        System.out.println("Sobaka");
-        boolean devMode = false;
-        if(devMode){
-            System.out.println("I'm in DevMode!");
-            System.out.println("I'm in DevMode 2!");
-        }
-=======
->>>>>>> 6c44044f2f0d774e9a1ea099cb70391ac4a24287
     }
 }
